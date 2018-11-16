@@ -25,12 +25,5 @@ public class CricketApiApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
-
-	@Test
-	public void getDataFromScoreApi() {
-
-		ScoreApiResponse response = cricketScoreClient.getScoreDetails("WmPJrX2s3KMyZVPFwlm1vxXLXKw1", "	1136617");
-		logger.info(response.getTeam1());
-	}
+	
 }
