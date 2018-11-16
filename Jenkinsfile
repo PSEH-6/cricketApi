@@ -8,8 +8,8 @@ pipeline {
             }
         stage('build and Upload Docker Image') {
             steps {
-                sh 'docker build . -t cricket-api:latest'
-                sh 'docker login -p Github@123 -u ahujar && docker push cricket-api:latest'
+                sh 'docker build . -t ahujar/cricket-api:latest'
+                sh 'docker login -p Github@123 -u ahujar && docker push ahujar/cricket-api:latest'
             }
         }
         }
