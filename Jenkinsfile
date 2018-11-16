@@ -8,7 +8,8 @@ pipeline {
             }
         stage('build and Upload Docker Image') {
             steps {
-                sh 'docker build . -t cricket-api:1.0.0'
+                sh 'docker build . -t cricket-api:latest'
+                sh 'docker push cricket-api:latest'
             }
         }
         }
